@@ -1,0 +1,51 @@
+Lesson's Learned:
+-installed latest version of nodeJs from website, added the paths to PATH env variable:
+export NODEJS_HOME=/usr/local/lib/nodejs/node-v9.8.0-linux-x64
+export PATH=$NODEJS_HOME/bin:$PATH
+
+-encountered issue with installing angular cli from npm:
+solution:
+change npm default directory: https://docs.npmjs.com/getting-started/fixing-npm-permissions
+added variables to path after adding npm global to user home directory:
+export NPM_GLOBAL_PATH=/home/malhan/npm-global
+export PATH=$NPM_GLOBAL_PATH/bin:$PATH
+
+GOOD TO KNOW: /etc/skel/ files are copied to all new users that are created. user specific profile
+and bash files are found in the ~ directory
+
+All the code is written in the app folder
+
+ng cli: ng new {folder name} to create a new application
+        ng serve to start the application
+
+index.html is the file that renders the single page apps
+
+assets folder can contain images and other application assets
+
+environment folder is used for environment variables
+
+app.component.ts contains the main application code (typescript file) contains business logic
+
+app.component.html contains the html manipulations, contains what you see
+
+app.module.ts contains features we can add to the application (imports etc)
+
+to install bootstrap 3: npm install --save bootstrap@3
+
+ng serve to start the project server
+
+angular-cli.json has json values for different modules you want to include in html using webpack
+
+ng generate component {comopnent name} to generate ng components in application
+
+The MDN (Mozilla Developer Network) offers nice lists of all properties and events
+of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.
+
+bootstrap location:
+"../node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+***************************************************************
+4/11/2018, 7:37:24 PM
+what is 'style=cursor: pointer'
+
+(element name).(class).[(attr)='(value)']

@@ -1,0 +1,23 @@
+start vim:		vim {file name}
+open vim tutor:		vimtutor
+
+install app:		apt-get install {package name}
+list apps in repo:	apt-cache search {appname}
+list kernel modules:	lsmod | grep {filename}
+delete(pruge) app:	sudo apt remove --purge {application name}
+update package list:	sudo apt-get update
+add PPA repo:		sudo add-apt-repository {ppa location}
+find file anywhere:   find / -name "filename"
+
+vim commands:
+insert mode:		i
+exit insert mode:	esc
+save:			:x!
+quit w/out saving:	:q!
+write/quit:		:wq!
+
+npm commands:
+install package: (sudo) npm install -g (for global) {package name}
+
+increase number of file listeners for changes:
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
