@@ -49,3 +49,32 @@ bootstrap location:
 what is 'style=cursor: pointer'
 
 (element name).(class).[(attr)='(value)']
+
+***************************************************************
+
+4/8/2018, 7:22:32 PM
+[ngStyle] = binding to a property of the directive
+[ngClass] = to assign classes to elements dynamically
+
+*(directive) = structural directive changing the dom itself
+
+ngFor = loop, syntax = 'let (temporary var) of (list)'
+for index add 'let (temporary var) of (list); let i=index'
+
+************************************************************
+4/10/2018, 8:19:48 PM (NOTES COPIED to consolidate list)
+-for the project
+  -shopping list (feature)
+  -recipe book (feature)
+  -root app
+  -header component
+
+read on bootstrap:
+  -navbar
+  -dropdown
+  -list-group-item
+  -pull left
+
+models are defined like pojos, no model annotation
+
+************************************************************
