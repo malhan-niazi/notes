@@ -78,3 +78,12 @@ read on bootstrap:
 models are defined like pojos, no model annotation
 
 ************************************************************
+4/15/2018, 4:51:50 PM
+
+for version mismatch in local/global angular:
+npm uninstall --save-dev angular-cli (uninstall local)
+npm install --save-dev @angular/cli@latest (install latest local)
+npm install
+
+property binding and event binding
+@Input('(alias)-optional') (element) allows any component hosting the component containing this element to be exposed to this value
